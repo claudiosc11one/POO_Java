@@ -1,4 +1,4 @@
 # POO_Java
-Programação Orientada a Objetos usando Java | Usando as aulas do Professor Gustavo Guanabara
+Programação Orientada a Objetos(POO) usando Java | Usando as aulas do Professor Gustavo Guanabara
 
 
