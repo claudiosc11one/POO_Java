@@ -1,45 +1,60 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package aula02b_gustavoguanabara;
-
-/**
- *
- * @author claud
- */
+package aula04b_gustavoguanabara;
 public class Caneta {
-    public String modelo;
-    public String cor;
+    private String modelo;
     private float ponta;
-    protected int carga;
+    private String cor;
     private boolean tampada;
-    public void status(){
-        System.out.println("Modelo: " + this.modelo);
-        System.out.println("Uma caneta: " + this.cor );
-        System.out.println("Ponta: " + this.ponta);
-        System.out.println("Carga: " + this.carga);
-        System.out.println("Está tampada? " + this.tampada);
-        
-    }
     
-    public void rabiscar(){
-        if (this.tampada == true){
-            System.out.println("ERRO! Não posso rabiscar.");
-        } else{
-            System.out.println("Estou Rabiscando!");
-        }
-        
-    }
+//    Ctrl + I por que eu não estou acessando neste momento?
+    // Ctrl + I significa inserir código.
+    // Checar Alt + Insert para Windwos
     
-    public void tampar(){
-        this.tampada = true;
-        
-    }
     
-    public void destampar(){
-        this.tampada = false;
-        
-    }
     
+    
+    
+    
+    
+    
+    
+    
+//    public Caneta(String m, String c, float p){ // Este é o método construtor
+//        this.modelo = m;
+//        this.cor = c;
+//        this.setPonta(p);
+//        this.tampar();
+// }
+//    
+//    public String getModelo(){
+//        return this.modelo;
+//   }
+//    public void setModelo(String m){
+//        this.modelo = m;
+//    }
+//    public float getPonta(){
+//        return this.ponta;
+//    }
+//    public void setPonta(float p){
+//        this.ponta = p;
+//    }
+//    
+//    public void tampar() {
+//        this.tampada = true;
+//    }
+//    
+//    public void destampar(){
+//        this.tampada = false;
+//    }
+//    
+//    
+//    public void Status(){
+//        System.out.println("Sobre a caneta: ");
+//        System.err.println("Modelo: " + this.getModelo());
+//        System.out.println("Ponta: " + this.getPonta());
+//        System.out.println("Cor: " + this.cor);
+//        System.out.println("Tampada: " + this.tampada);
+//                
+//    }
+//    
+//    
 }
