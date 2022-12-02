@@ -1,21 +1,20 @@
-package pessoas; //Classe Aluno
-public class Aluno extends Pessoa { // extends faz a Classe Aluno receber herança da Classe Pessoa
-    private int matr;
+package aula011b;
+public class Aluno extends Pessoa {
+    private int matricula;
     private String curso;
     
-    //Método    
-    public void cancelarMatr(){
-        System.out.println("Matricula serah cancelada!");
+    //Método NORMAL, que é pagarMensalidade do Aluno, não é sobreposto.
+    public void pagarMensalidade(){
+        System.out.println("Pagando mensalidade do aluno: " + this.nome);
     }
-    
-    //Métodos Especiais
+    //Métodos Getters and Setters
 
-    public int getMatr() {
-        return matr;
+    public int getMatricula() {
+        return matricula;
     }
 
-    public void setMatr(int matr) {
-        this.matr = matr;
+    public void setMatricula(int matricula) {
+        this.matricula = matricula;
     }
 
     public String getCurso() {

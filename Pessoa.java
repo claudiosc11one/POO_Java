@@ -1,14 +1,18 @@
-package pessoas; //Classe Pessoa
-public class Pessoa {
-    private String nome;
-    private int idade;
-    private String sexo;
+package aula011b;
+public abstract class Pessoa {
+    protected String nome;
+    protected int idade;
+    protected String sexo;
     
-    // Métodos
+    //Método 
+    
     public void fazerAniversario(){
         this.idade ++;
+        
     }
-    //Métodos Especiais
+    
+    
+    //Métodos Getters and Setters
 
     public String getNome() {
         return nome;
@@ -33,13 +37,12 @@ public class Pessoa {
     public void setSexo(String sexo) {
         this.sexo = sexo;
     }
-    
-    //Método Especial toString
 
     @Override
     public String toString() {
         return "Pessoa{" + "nome=" + nome + ", idade=" + idade + ", sexo=" + sexo + '}';
     }
+    
     
     
 }
