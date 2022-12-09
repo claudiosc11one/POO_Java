@@ -1,19 +1,20 @@
-package aula011b;
-public abstract class Pessoa {
+package aula15b_projetoyoutube;
+public abstract class Pessoa { // abstract é uma base para criar outras Classes.
+    // Classe Abstrada não são instanciadas, não viram objeto.
     protected String nome;
     protected int idade;
     protected String sexo;
+    protected float experiencia;
     
-    //Método 
-    
-    public void fazerAniversario(){
-        this.idade ++;
-        
+    //Construtor
+    public Pessoa(String nome, int idade, String sexo) {
+        this.nome = nome;
+        this.idade = idade;
+        this.sexo = sexo;
     }
     
     
-    //Métodos Getters and Setters
-
+    //Método Getters and Settres
     public String getNome() {
         return nome;
     }
@@ -38,9 +39,17 @@ public abstract class Pessoa {
         this.sexo = sexo;
     }
 
+    public float getExperiencia() {
+        return experiencia;
+    }
+
+    public void setExperiencia(float experiencia) {
+        this.experiencia = experiencia;
+    }
+
     @Override
     public String toString() {
-        return "Pessoa{" + "nome=" + nome + ", idade=" + idade + ", sexo=" + sexo + '}';
+        return "Pessoa{" + "nome=" + nome + ", idade=" + idade + ", sexo=" + sexo + ", experiencia=" + experiencia + '}';
     }
     
     
